@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom,#A18357,#614F34);
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding:  15px;
+}
+
+.map{
+    width: 100%;
+    max-width: 3000px;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    background-color: red;
+    transform: translate(-57%, 0);
+}
