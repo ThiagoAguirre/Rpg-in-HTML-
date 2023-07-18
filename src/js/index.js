@@ -1,7 +1,9 @@
 let selecionada = null;
 const espadaSelecao = document.getElementById("espada-selecao");
+const trilhaSonora = document.getElementById("fundo-music");
 
 espadaSelecao.volume = 0.1;
+trilhaSonora.volume = 0.04;
 
 const personagens = document.querySelectorAll(".personagem");
 personagens.forEach((personagem) => {
@@ -25,8 +27,11 @@ personagens.forEach((personagem) => {
 
         espadaSelecao.load();
         espadaSelecao.play();
-
     });
+});
+
+window.addEventListener("load", () => {
+    trilhaSonora.play();
 });
 
 function alterarDescricaoPersonagem(personagem) {

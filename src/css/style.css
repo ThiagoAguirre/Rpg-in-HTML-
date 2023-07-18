@@ -10,25 +10,27 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: -1;
-    opacity: 0.15;
+    opacity: 0.2;
 }
 
 .cabecalho {
     display: flex;
     justify-content: center;
-    height: 170px;
-    margin: 11px;
+    /*height: 170px;
+    margin: 11px;*/
 }
 
 .selecao-de-personagens {
     display: flex;
     align-items: center;
     gap: 30px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 152px);
     justify-content: center;
 }
 
@@ -56,13 +58,97 @@ body::before {
     text-align: center;
 }
 
-.selecao-de-personagens .personagem {
-    width: 123px;
-    filter: grayscale(100%);
+.lista-de-personagens .personagem {
+    border-bottom: 4px solid aa0000;
+    transition: 0.2s all ease-out;
+    filter: grayscale(100%)
 }
 
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+}
 
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #aa0000;
 
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 430px;
+    height: 430px;
+}
+
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid #aa0000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.personagem.clicado,
+.personagem.clicado:hover {
+    transform: scale(1.1);
+    transition: 0.2s all ease-out;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #aa0000;
+    transition: 0.2s all ease-out;
+}
+
+.lista-de-personagens .personagem.clicado {
+    transform: scale(1.1);
+    transition: 0.2s all ease-out;
+    filter: brightness(1);
+}
+
+.lista-de-personagens .personagem.clicado:hover {
+    filter: brightness(1.2);
+}
+
+.lista-de-personagens .personagem.selecionado.clicado {
+    filter: brightness(1);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 24px 5px #aa0000bb;
+    }
+
+    30% {
+        box-shadow: 0px 0px 24px 5px #aa000080, 0px 0px 40px 15px #d61414ca;
+    }
+
+    80% {
+        box-shadow: 0px 0px 24px 5px #aa000067;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/*
 .personagem-selecionado {
     text-align: center;
     max-height: 540px;
@@ -145,4 +231,4 @@ body::before {
 
 ::-webkit-scrollbar-thumb {
     background-color: #9e9ea0;
-}
+}*/
