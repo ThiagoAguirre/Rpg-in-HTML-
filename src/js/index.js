@@ -65,7 +65,7 @@ function alterarImagemPersonagemSelecionado(personagem) {
     imagemPersonagemGrande.classList.add("fade-out");
 
     setTimeout(() => {
-        imagemPersonagemGrande.src = `./src/image/card-${idPersonagem}.png`;
+        imagemPersonagemGrande.src = `src/image/card-${idPersonagem}.png`;
         imagemPersonagemGrande.classList.remove("fade-out");
         imagemPersonagemGrande.classList.add("fade-in");
     }, 300);
