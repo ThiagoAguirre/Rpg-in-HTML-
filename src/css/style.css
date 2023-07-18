@@ -6,7 +6,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url(../image/MAPA-WORLD.webp);
+    background-image: url(../imagens/MAPA-WORLD.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
