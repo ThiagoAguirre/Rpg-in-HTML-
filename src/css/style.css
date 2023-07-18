@@ -1,5 +1,5 @@
 body {
-    font-family: "oxanium", cursive;
+    font-family: "Oxanium", cursive;
     background-color: black;
     color: #ffffff;
 }
@@ -10,11 +10,9 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     z-index: -1;
     opacity: 0.2;
 }
@@ -22,8 +20,7 @@ body::before {
 .cabecalho {
     display: flex;
     justify-content: center;
-    /*height: 170px;
-    margin: 11px;*/
+
 }
 
 .selecao-de-personagens {
@@ -59,9 +56,9 @@ body::before {
 }
 
 .lista-de-personagens .personagem {
-    border-bottom: 4px solid aa0000;
-    transition: 0.2s all ease-out;
-    filter: grayscale(100%)
+    border-bottom: 4px solid #aa0000;
+    /*transition: 0.2s all ease-out;
+    filter: grayscale(100%)*/
 }
 
 .lista-de-personagens .personagem img {
@@ -98,6 +95,7 @@ body::before {
     width: 420px;
 }
 
+/*
 .personagem.clicado,
 .personagem.clicado:hover {
     transform: scale(1.1);
@@ -147,6 +145,7 @@ body::before {
     opacity: 0;
     transition: opacity 0.3s;
 }
+*/
 
 /*
 .personagem-selecionado {
