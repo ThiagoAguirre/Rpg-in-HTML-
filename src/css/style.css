@@ -95,7 +95,7 @@ body::before {
     width: 420px;
 }
 
-/*
+
 .personagem.clicado,
 .personagem.clicado:hover {
     transform: scale(1.1);
@@ -145,89 +145,18 @@ body::before {
     opacity: 0;
     transition: opacity 0.3s;
 }
-*/
 
-/*
-.personagem-selecionado {
-    text-align: center;
-    max-height: 540px;
-}
 
-.personagem-selecionado .personagem-selecionado {
-    width: 430px;
-    height: 430px;
-}
 
-.personagem-selecionado .nome-personagem {
-    font-size: 24px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #ac1111;
-    width: 100%;
-    text-align: center;
-}
-
-.personagem-selecionado .descricao-personagem {
-    font-size: 16px;
-    line-height: 22px;
-    text-align: justify;
-    margin-top: 20px;
-    width: 585px;
-}
-
-.personagem:hover img {
-    transform: scale(1.1);
-    filter: none;
-}
-
-.personagem {
-    width: 124px;
-    height: 190px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.lista-de-personagens .personagem.clicado:hover {
-    filter: brightness(1.2);
-}
-
-.lista-de-personagens .personagem.selecionado.clicado {
-    filter: brightness(1);
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0px 0px 24px 5px #aa0000;
-    }
-
-    30% {
-        box-shadow: 0px 0px 24px 5px #aa0000b8, 0px 0px 30px 10px #bd0606d3;
-    }
-
-    80% {
-        box-shadow: 0px 0px 24px 5px #aa0000d5;
-    }
-}
-
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
 
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #2c2c31;
+    background-color: #18181a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #9e9ea0;
-}*/
+    background-color: #982323e6;
+}
