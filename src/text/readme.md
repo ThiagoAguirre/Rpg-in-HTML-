@@ -1,16 +1,13 @@
 # Nome dos personagens
-
 * Vanda  --card-- +
-* Fouster --card-- 
-* Ethan  --card-- 
-* Nir  --card--  
-
+* Fouster --card-- +
+* Ethan  --card-- +
+* Nir  --card-- +
 * Axotil --card-- +
-
-* Royer Degur --card--  
-* Caligola --card-- 
+* Royer Degur --card--  +
+* Drogus --card-- +
+* Caligola --card-- +
+* Zamir --card-- +
 * Guts --card-- 
-* Vak --card-- 
-* Elemayer --card-- 
-* dayreth --card-- 
-* Zamir --card-- 
+* Vak --card--  +
+* dayreth --card-- +
